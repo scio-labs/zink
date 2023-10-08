@@ -1,0 +1,15 @@
+[package]
+name = "zink"
+version = "0.1.0"
+authors = ["Scio Labs <hello@scio.xyz>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+syn = { version = "2", features = ["full", "parsing", "extra-traits"] }
+quote = "1"
+proc-macro2 = "1"
+
+[lib]
+proc-macro = true
