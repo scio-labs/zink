@@ -3,16 +3,24 @@
 # zink! Smart Contract Macros
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Built with ink!](https://raw.githubusercontent.com/paritytech/ink/master/.images/badge.svg)](https://github.com/paritytech/ink)
+[![Built with ink!](https://raw.githubusercontent.com/paritytech/ink/master/.images/badge.svg)](https://use.ink)
 ![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
 
-zink! is a library for developing ink! smart contracts. It contains useful Rust macros that extend functionality and reduce boilerplate code.
+This is a helper library for developing ink! smart contracts. It contains useful Rust macros that extend functionality and reduce boilerplate code.
 
-This library still has a very limited scope, please submit an issue to suggest new modules or get help.
+The project is part of a [Scio Labs](https://scio.xyz) initiative to improve the developer experience in the ink! ecosystem. Other projects include:
 
-Join the discussion in our [Telegram Group](https://t.me/inkathon).
+- `create-ink-app` CLI (_Coming soon_)
+- [`ink!athon`](https://github.com/scio-labs/inkathon) Boilerplate
+- [`useInkathon`](https://github.com/scio-labs/use-inkathon) Hooks & Utility Library
+- [`zink!`](https://github.com/scio-labs/zink) Smart Contract Macros
+
+**Join the discussion in our [Telegram Group](https://t.me/inkathon)** 💬
 
 ## Macros
+
+> [!NOTE]  
+> This library still has a very limited scope, please submit an issue to suggest new modules or get help.
 
 | Macros         | Description                                                                                                                                                                                                                                                                                                                     | Audited |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
