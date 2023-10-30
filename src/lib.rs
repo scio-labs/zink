@@ -1,8 +1,7 @@
 extern crate proc_macro;
 
-mod ownable2step;
+mod macros;
 mod parser;
-mod upgradability;
 
 use crate::parser::Args;
 use proc_macro::TokenStream;
@@ -43,7 +42,7 @@ fn get_storage_struct(items: &[Item]) -> ItemStruct {
 }
 
 fn support_upgrade(items: &mut Vec<Item>, storage_name: &syn::Ident) {
-    let code = upgradability::upgradability_impl(storage_name);
+    let code = macros::upgradability::upgradability_impl(storage_name);
     let item = syn::parse(code).unwrap();
     items.push(item);
 }
@@ -54,7 +53,7 @@ fn support_ownable2step(
     err_name: &syn::Ident,
     err_val: &syn::Expr,
 ) {
-    let code = ownable2step::ownable2step_impl(storage_name, err_name, err_val);
+    let code = macros::ownable2step::ownable2step_impl(storage_name, err_name, err_val);
     let item = syn::parse(code).unwrap();
     items.push(item);
 }
